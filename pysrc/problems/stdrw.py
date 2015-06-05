@@ -243,6 +243,11 @@ class PerformanceMeasure(object):
     self.Pm             = prob.getP(params['ns'], self.mpol, self.Psa)
     self.Dm             = prob.getD(params['ns'], self.Pm, self.initstateprob)
     self.MSPVE            = np.zeros(params['N'])
+    
+    # Calculate norm of the projected true value
+    self.normFactor   = np.dot(self.VTrueProj, np.dot(self.Dm, self.VTrueProj))
+    print "Norm of the value:" + str(self.normFactor)
+
 
   def calcMse(self, alg, ep):
     msediff         = np.dot(self.Phi, alg.estimate()) - self.VTrueProj
