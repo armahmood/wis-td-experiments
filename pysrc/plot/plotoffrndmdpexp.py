@@ -18,10 +18,10 @@ def plotonealg(algname, params):
   if not os.path.exists(path):
     path = "../."+path
   pathfileprefix      = path+"mdpseed_1000_runseed_"
-  #if not os.path.isfile(pathfileprefix+"perfvslmbda.plot.pkl"):
-  sys.argv  = ["", "10", pathfileprefix]
-  sys.argv.extend(params)
-  plotdataprocess.main()
+  if not os.path.isfile(pathfileprefix+"perfvslmbda.plot.pkl"):
+    sys.argv  = ["", "10", pathfileprefix]
+    sys.argv.extend(params)
+    plotdataprocess.main()
   oisdata   = pickle.load(file(pathfileprefix+"perfvslmbda.plot.pkl"))
   ppl.errorbar(oisdata[:,0], oisdata[:,1], oisdata[:,2], label=algname)
 
