@@ -155,14 +155,14 @@ class StdRandomWalk(object):
       Phi[(ns-1)/2,] = np.array([0,1,0])
       Phi[((ns-1)/2+1):-1,] = np.array([0,0,1])
       return Phi
-    if ftype=='binary':
+    if ftype=='binary': # binary features
       nf = int(np.ceil(np.log(ns-1)/np.log(2)))
       Phi = np.zeros((ns, nf))
       for i in range(1,ns-1):
         for j in range(nf):
           Phi[i, nf-j-1] = (i>>j) & 1
       return Phi
-    if ftype=='nbinary':
+    if ftype=='nbinary': # normalized binary features
       nf = int(np.ceil(np.log(ns-1)/np.log(2)))
       Phi = np.zeros((ns, nf))
       for i in range(1,ns-1):
@@ -171,13 +171,13 @@ class StdRandomWalk(object):
         a = sum(Phi[i,]*Phi[i,])
         Phi[i,] = Phi[i,]/np.sqrt(a)
       return Phi
-    if ftype=='normal':
+    if ftype=='normal': # normal random features
       Phi = np.zeros((ns, nf))
       for i in range(1,ns-1):
         for j in range(nf):
           Phi[i, j] = randobj.gauss(0, 1)
       return Phi    
-    if ftype=='nnormal':
+    if ftype=='nnormal': # normalized normal random features
       Phi = np.zeros((ns, nf))
       for i in range(1,ns-1):
         for j in range(nf):

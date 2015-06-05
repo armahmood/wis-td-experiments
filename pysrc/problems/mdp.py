@@ -103,7 +103,7 @@ class MDP(object):
     Phi = 0.0
     if ftype=='tabular':
       Phi = np.eye(ns)
-    elif ftype=='binary':
+    elif ftype=='binary': # normalized binary features
       nf = int(np.ceil(np.log(ns+1)/np.log(2)))
       Phi = np.zeros((ns, nf))
       for i in range(ns):
@@ -111,7 +111,7 @@ class MDP(object):
           Phi[i, nf-j-1] = ((i+1)>>j) & 1
         a = sum(Phi[i,]*Phi[i,])
         Phi[i,] = Phi[i,]/np.sqrt(a)
-    elif ftype=='normal':
+    elif ftype=='normal': #normalized normal random features
       Phi = np.zeros((ns, nf))
       for i in range(ns):
         for j in range(nf):

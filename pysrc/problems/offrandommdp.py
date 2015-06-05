@@ -67,7 +67,7 @@ class OffRandomMDP(mdp.MDP):
     Phi = 0.0
     if ftype=='tabular':
       Phi = np.eye(ns)
-    elif ftype=='binary':
+    elif ftype=='binary': # normalized binary features
       nf = int(np.ceil(np.log(ns+1)/np.log(2)))
       Phi = np.zeros((ns, nf))
       for i in range(ns):
@@ -75,20 +75,20 @@ class OffRandomMDP(mdp.MDP):
           Phi[i, nf-j-1] = ((i+1)>>j) & 1
         a = sum(Phi[i,]*Phi[i,])
         Phi[i,] = Phi[i,]/np.sqrt(a)
-    elif ftype=='nbinary':
+    elif ftype=='nbinary': # non-normalized binary features
       nf = int(np.ceil(np.log(ns+1)/np.log(2)))
       Phi = np.zeros((ns, nf))
       for i in range(ns):
         for j in range(nf):
           Phi[i, nf-j-1] = ((i+1)>>j) & 1
-    elif ftype=='normal':
+    elif ftype=='normal': # normalized normal random features
       Phi = np.zeros((ns, nf))
       for i in range(ns):
         for j in range(nf):
           Phi[i, j] = rndobj.normal(0, 1)
         a = sum(Phi[i,]*Phi[i,])
         Phi[i,] = Phi[i,]/np.sqrt(a)
-    elif ftype=='nnormal':
+    elif ftype=='nnormal': # non-normalized normal random features
       Phi = np.zeros((ns, nf))
       for i in range(ns):
         for j in range(nf):
