@@ -36,7 +36,7 @@ def main():
   plotonealg("wislstd", ["2", "inita", "lambda", "1", "lambda"])
   plotonealg("lstdto", ["2", "inita", "lambda", "1", "lambda"])
   ppl.ylim([0, 0.15])
-  ppl.legend()
+  #ppl.legend()
   #ppl.savefig('tmp.png')
   
 if __name__ == '__main__':
