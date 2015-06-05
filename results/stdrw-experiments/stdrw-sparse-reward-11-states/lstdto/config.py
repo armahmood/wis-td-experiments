@@ -12,7 +12,7 @@ lms       = np.concatenate((np.arange(0, .9, .1), np.arange(.9, 1.01, .01)))
 configs     = [
                  {
                    'ns'        : ns,
-                 'algname'   : 'olstd2',
+                 'algname'   : 'lstdto',
                  'gamma'     : 1.0,
                  'N'      : 100,
                  'ftype'     : ftype,

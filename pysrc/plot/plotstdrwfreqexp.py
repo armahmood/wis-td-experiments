@@ -18,11 +18,11 @@ def plotonealg(algname, params):
   if not os.path.exists(path):
     path = "../."+path
   pathfileprefix      = path+"run_"
-  if not os.path.isfile(pathfileprefix+"perfvslambda.plot"):
+  if not os.path.isfile(pathfileprefix+"perfvslambda.plot.pkl"):
     sys.argv  = ["", "50", pathfileprefix]
     sys.argv.extend(params)
     plotdataprocess.main()
-  oisdata   = pickle.load(file(pathfileprefix+"perfvslambda.plot"))
+  oisdata   = pickle.load(file(pathfileprefix+"perfvslambda.plot.pkl"))
   ppl.errorbar(oisdata[:,0], oisdata[:,1], oisdata[:,2], label=algname)
 
 def main():
@@ -34,7 +34,7 @@ def main():
   plotonealg("wtogtd", ["4", "eta", "initd", "beta", "lambda", "1", "lambda"])
   plotonealg("oislstd", ["2", "inita", "lambda", "1", "lambda"])
   plotonealg("wislstd", ["2", "inita", "lambda", "1", "lambda"])
-  plotonealg("olstd2", ["2", "inita", "lambda", "1", "lambda"])
+  plotonealg("lstdto", ["2", "inita", "lambda", "1", "lambda"])
   ppl.ylim([1, 5])
   ppl.legend()
   #ppl.savefig('tmp.png')

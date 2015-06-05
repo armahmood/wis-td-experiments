@@ -17,7 +17,7 @@ def main():
   initdist[(ns-1)/2] = 1.
   configs     = [
                    {
-                   'algname'   : "olstd2",
+                   'algname'   : "lstdto",
                    'mdpseed'   : 1000,
                    'Gamma'     : Gamma,
                    'initsdist' : initdist,

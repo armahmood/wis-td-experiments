@@ -18,11 +18,11 @@ def plotonealg(algname, params):
   if not os.path.exists(path):
     path = "../."+path
   pathfileprefix      = path+"mdpseed_1000_runseed_"
-  #if not os.path.isfile(pathfileprefix+"perfvslmbda.plot"):
+  #if not os.path.isfile(pathfileprefix+"perfvslmbda.plot.pkl"):
   sys.argv  = ["", "40", pathfileprefix]
   sys.argv.extend(params)
   plotdataprocess.main()
-  oisdata   = pickle.load(file(pathfileprefix+"perfvslmbda.plot"))
+  oisdata   = pickle.load(file(pathfileprefix+"perfvslmbda.plot.pkl"))
   ppl.errorbar(oisdata[:,0], oisdata[:,1], oisdata[:,2], label=algname)
 
 def main():
@@ -34,7 +34,7 @@ def main():
   plotonealg("wtogtd", ["4", "eta", "initd", "beta", "lmbda", "1", "lmbda"])
   plotonealg("oislstd", ["2", "inita", "lmbda", "1", "lmbda"])
   plotonealg("wislstd", ["2", "inita", "lmbda", "1", "lmbda"])
-  plotonealg("olstd2", ["2", "inita", "lmbda", "1", "lmbda"])
+  plotonealg("lstdto", ["2", "inita", "lmbda", "1", "lmbda"])
   ppl.ylim([0.1, 0.3])
   #ppl.yscale('log')
   ppl.legend()

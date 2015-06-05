@@ -32,7 +32,7 @@ p10
 I6
 sS'algname'
 p11
-S'olstd2'
+S'lstdto'
 p12
 sS'nstates'
 p13

@@ -15,8 +15,7 @@ import argparse
 import numpy as np
 from pysrc.problems import mdp
 from pysrc.problems import offrandommdp
-from pysrc.algorithms.tdprediction.offpolicy import oislstd
-from pysrc.algorithms.tdprediction.offpolicy import olstd2
+from pysrc.algorithms.tdprediction.offpolicy import lstdto
 from pysrc.algorithms.tdprediction.offpolicy import wislstd
 from pysrc.algorithms.tdprediction.offpolicy import gtd
 from pysrc.algorithms.tdprediction.offpolicy import togtd
@@ -62,8 +61,7 @@ def main():
   algs  = {
            'gtd':gtd.GTD, \
            'togtd':togtd.TOGTD,\
-           'oislstd':oislstd.OISLSTD,\
-           'olstd2':olstd2.OLSTD2,\
+           'lstdto':lstdto.LSTDTO,\
            'wislstd':wislstd.WISLSTD,\
            'wtd':wtd.WTD, \
            'wgtd':wgtd.WGTD, \
