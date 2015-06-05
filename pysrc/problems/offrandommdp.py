@@ -7,9 +7,9 @@ Created on Apr 16, 2015
 import numpy as np
 import pylab as pl
 import random
-from pysrc.problems import mdp, randommdp
+from pysrc.problems import mdp
 
-class OffRandomMDP(randommdp.RandomMDP):
+class OffRandomMDP(mdp.MDP):
   '''
   It creates a randomly generated MDP object.
   Its description is close to that of garnet problems (Bhatnagar et al. 2009).
