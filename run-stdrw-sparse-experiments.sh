@@ -5,7 +5,7 @@ for runseed in {1..1}
 do
 for alg in gtd togtd wtd wtogtd wgtd wislstd lstdto
 do
-time python pysrc/experiments/stdrwexp.py 1000 $runseed results/stdrw-experiments/stdrw-sparse-reward-11-states/ $alg &
+time python pysrc/experiments/stdrwexp.py $runseed StdRWSparseReward  results/stdrw-experiments/stdrw-sparse-reward-11-states/$alg/ &
 
 done
 
