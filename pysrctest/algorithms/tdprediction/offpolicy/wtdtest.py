@@ -8,7 +8,7 @@ import numpy as np
 from pysrc.problems.stdrwsparsereward import StdRWSparseReward2
 from pysrc.problems.stdrwfreqreward import StdRWFreqReward2
 from pysrc.algorithms.tdprediction.offpolicy.wtd import WTD
-import pysrctest.problems.stdrwexp2 as stdrwexp2
+import pysrctest.experiments.stdrwexp2 as stdrwexp2
 from pysrc.problems.mdp import PerformanceMeasure
 from pysrc.problems import mdp
 from pysrc.problems.simpletwostate import SimpleTwoState

@@ -9,7 +9,7 @@ from pysrc.problems.stdrwsparsereward import StdRWSparseReward, StdRWSparseRewar
 from pysrc.problems.stdrwfreqreward import StdRWFreqReward, StdRWFreqReward2
 from pysrc.algorithms.tdprediction.offpolicy.togtd import TOGTD
 from pysrc.experiments import stdrwexp
-import pysrctest.problems.stdrwexp2 as stdrwexp2
+import pysrctest.experiments.stdrwexp2 as stdrwexp2
 from pysrc.problems import stdrw
 from pysrc.problems.mdp import PerformanceMeasure
 from pysrc.problems import mdp
