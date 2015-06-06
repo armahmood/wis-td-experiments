@@ -23,7 +23,8 @@ def plotonealg(algname, params):
     sys.argv.extend(params)
     plotdataprocess.main()
   oisdata   = pickle.load(file(pathfileprefix+"perfvslambda.plot.pkl"))
-  ppl.errorbar(oisdata[:,0], oisdata[:,1], oisdata[:,2], label=algname)
+  norm      = 30.1062863941
+  ppl.errorbar(oisdata[:,0], oisdata[:,1]/norm, oisdata[:,2]/norm, label=algname)
 
 def main():
 
@@ -35,8 +36,8 @@ def main():
   plotonealg("oislstd", ["2", "inita", "lambda", "1", "lambda"])
   plotonealg("wislstd", ["2", "inita", "lambda", "1", "lambda"])
   plotonealg("lstdto", ["2", "inita", "lambda", "1", "lambda"])
-  ppl.ylim([1, 5])
-  ppl.legend()
+  ppl.ylim([0.05, .15])
+  ppl.legend(loc='lower left')
   #ppl.savefig('tmp.png')
   
 if __name__ == '__main__':
