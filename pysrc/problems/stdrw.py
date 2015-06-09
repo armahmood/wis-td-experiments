@@ -246,7 +246,7 @@ class PerformanceMeasure(object):
     
     # Calculate norm of the projected true value
     self.normFactor   = np.dot(self.VTrueProj, np.dot(self.Dm, self.VTrueProj))
-    print "Norm of the value:" + str(self.normFactor)
+    #print "Norm of the value:" + str(self.normFactor)
 
 
   def calcMse(self, alg, ep):
