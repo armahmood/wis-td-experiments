@@ -12,4 +12,4 @@ In order to run the experiment on the randomly generated MDP with 10 state and g
 
 #References
 
-Mahmood, A. R., Sutton, R. S. (2015). Off-policy learning based on weighted importance sampling with linear computational complexity. In Proceedings of the 31st Conference on Uncertainty in Artificial Intelligence, Amsterdam, Netherlands.
+Mahmood, A. R., Sutton, R. S. (2015). Off-policy learning based on weighted importance sampling with linear computational complexity. In *Proceedings of the 31st Conference on Uncertainty in Artificial Intelligence*, Amsterdam, Netherlands.
