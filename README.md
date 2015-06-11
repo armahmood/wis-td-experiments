@@ -1,6 +1,6 @@
-# Off-policy experiments evaluating WIS-based O(n) algorithms (Mahmood & Sutton 2015)
+# Off-policy experiments evaluating WIS-based O(n) algorithms 
 
-This project contains random MDP experiments evaluating the usage-based step-size adaptation idea (Mahmood & Sutton 2015) applied to true online TD (TOTD) (van Seijen & Sutton 2014) and TD with accumulating traces (TD) (Sutton & Barto 1998).
+This project contains random MDP experiments evaluating the new off-policy algorithms based on weighted importance sampling (WIS) (Mahmood & Sutton 2015).
 
 This project can be imported as an Eclipse Pydev project.
 
