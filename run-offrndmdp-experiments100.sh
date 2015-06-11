@@ -13,5 +13,5 @@ done
 
 
 echo "Invoking matplotlib plot for the experiment ..."
-python ./pysrc/plot/plotoffrndmdpexp.py
+python ./pysrc/plot/plotoffrndmdpexp10.py
 
