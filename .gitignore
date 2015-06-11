@@ -3,5 +3,7 @@
 .*~
 *#
 *dat
+pysrc/plot/plotstdrwfreqexp.py
+results/offpolicy-rndmdp-experiments/stdrw-freq-reward-11-states
 
 
