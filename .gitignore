@@ -7,3 +7,36 @@ pysrc/plot/plotstdrwfreqexp.py
 results/offpolicy-rndmdp-experiments/stdrw-freq-reward-11-states/*
 
 
+run-stdrw-freq-experiments.sh
+results/stdrw-experiments/stdrw-freq-reward-11-states/gtd/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/gtd/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/gtd/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/gtd/run_perfvslambda.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/lstdto/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/lstdto/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/lstdto/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/lstdto/run_perfvslambda.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/oislstd/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/oislstd/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/oislstd/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/oislstd/run_perfvslambda.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/togtd/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/togtd/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/togtd/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/togtd/run_perfvslambda.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wgtd/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wgtd/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/wgtd/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wgtd/run_perfvslambda.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wislstd/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wislstd/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/wislstd/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wislstd/run_perfvslambda.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtd/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtd/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtd/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtd/run_perfvslambda.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtogtd/config.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtogtd/config.py
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtogtd/run_perftable.plot.pkl
+results/stdrw-experiments/stdrw-freq-reward-11-states/wtogtd/run_perfvslambda.plot.pkl
