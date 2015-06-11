@@ -8,7 +8,7 @@ In order to run the random-walk Markov chain experiment and generate plot, execu
 
 In order to run the experiment on the randomly generated MDP with 10 state and generate plot, execute `run-offrndmdp-experiments10.sh`.
 
-In order to run the experiment on the randomly generated MDP with 10 state and generate plot, execute `run-offrndmdp-experiments100.sh`.
+In order to run the experiment on the randomly generated MDP with 100 state and generate plot, execute `run-offrndmdp-experiments100.sh`.
 
 #References
 
